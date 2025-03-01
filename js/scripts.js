@@ -139,17 +139,17 @@ $(document).ready(function () {
       
       /********************** Countdown timer ***********************/
 
-      const weddingDate = new Date('Jul 19, 2025 09:00 GMT+0200').getTime();
-      const countdownEl = document.getElementById('countdown');
+      var weddingDate = new Date('Jul 19, 2025 13:00 GMT+0200').getTime();
+      var countdownEl = document.getElementById('countdown');
       
-      const interval = setInterval(() => {
-        const now = new Date().getTime();
-        const timeLeft = new Date(weddingDate - now).getTime();
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-        countdownEl.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+      var interval = setInterval(function () {
+        var now = new Date().getTime();
+        var timeLeft = new Date(weddingDate - now).getTime();
+        var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        countdownEl.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s";
       }, 100);
 
 

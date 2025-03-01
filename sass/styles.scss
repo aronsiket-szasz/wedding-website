@@ -293,13 +293,13 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: rgba(55, 36, 40, .88);
+  background-color: #1b2593;
   z-index: 999;
   width: 100%;
 }
 header {
   padding: 50px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  border-bottom: solid 1px rgb(255, 255, 255);
   position: relative;
   width: 1170px;
   margin: 0 auto;
@@ -899,3 +899,17 @@ body.modal-open {
 .modal-body {
   padding:25px;
 }
+/* ==========================================================================
+Scale image
+========================================================================== */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
