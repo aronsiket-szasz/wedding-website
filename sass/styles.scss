@@ -293,7 +293,7 @@ Hero
 }
 .fixed {
   position: fixed;
-  background-color: #1b2593;
+  background-color: #2D4A87;
   z-index: 999;
   width: 100%;
 }
@@ -918,4 +918,27 @@ Background golor
 ========================================================================== */
 .background-white {
   background-color: white;
+}
+
+/* ==========================================================================
+locations container
+========================================================================== */
+.locations-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  justify-content: center;
+  gap: 20%;
+}
+.item {
+  background-color: white;  
+  text-align: center;
+}
+
+.item-3 {
+  background-color: white;  
+  text-align: center;
 }
