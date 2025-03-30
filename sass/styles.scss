@@ -555,6 +555,7 @@ Features-stack
   .leftcol {
     padding-right: 100px;
     border-right: solid 1px $keyline-color;
+    
   }
   .rightcol {
     padding-left: 100px;
@@ -564,7 +565,32 @@ Features-stack
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
-    color: $txt-primary;
+    color: white;
+  }
+
+  p {
+    font-size: $font-size-p;
+    line-height: $base-line-height;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  .rsvp-btn {
+    padding: 15px 0;
+    border-radius: 3px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .btn-ilmoon {
+    color: black;
+    border: solid 2px $accent-color;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: white;
   }
 }
 
@@ -942,3 +968,31 @@ locations container
   background-color: white;  
   text-align: center;
 }
+
+/* ==========================================================================
+Flex center center
+========================================================================== */
+.flex-container-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+
+/* ==========================================================================
+Tervetuloa
+========================================================================== */
+.flex-welcome {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  hr {
+    border: 0.2vw solid black;
+    width: 20%;
+  }
+}
+

@@ -16,10 +16,10 @@ $bold: 700;
 
 // Sizes
 
-$font-size-h1: 72px;
+$font-size-h1: 8vw;
 $font-size-h2: 48px;
-$font-size-h3: 28px;
-$font-size-h4: 24px;
+$font-size-h3: 32px;
+$font-size-h4: 28px;
 $font-size-h5: 18px;
 $font-size-p: 18px;
 $nav-font-size: 13px;
@@ -41,31 +41,34 @@ Typography
 p {
   font-size: $font-size-p;
   line-height: $base-line-height;
-  color: $txt-primary;
+  color: black;
   padding-bottom: 20px;
 }
 
 h1 {
   font-size: $font-size-h1;
+  text-transform: uppercase;
+  color: black
 }
 
 h2 {
   font-size: $font-size-h2;
   font-weight: $light;
-  color: $h2-color;
+  color: black;
 }
 
 h3 {
-  color: $h3-color;
+  color: black;
   font-size: $font-size-h3;
-  font-weight: $bold;
+  font-weight: $normal;
   text-transform: uppercase;
-  letter-spacing: 3px;
   line-height: $base-line-height;
 }
 
 h4 {
   font-size: $font-size-h4;
+  color: black;
+  font-weight: $light;
 }
 
 h5 {
