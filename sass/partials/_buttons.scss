@@ -65,3 +65,9 @@
 .btn-margin-right {
 	margin-right: 20px;
 }
+
+.btn-accent {
+	background-color: white;
+	border-color: $accent-color;
+	color: $accent-color
+}
