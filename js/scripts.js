@@ -229,13 +229,13 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Pieni hetki!</strong> Tallennamme tietoja.'));
 
-        if (MD5($('#invite_code').val()) !== '8606f35ec6c77858dfb80a385d0d1151'
-            && MD5($('#invite_code').val()) !== '053adbc286576aac05442cdcbdf14112aa0e42cd') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
-        } else {
-            $.post('https://script.google.com/macros/s/AKfycbyCuv3jXkkyuDfTghDEGLCu59JxhXZYegKNSQe8UrKlM-UnGI5K4IpLJXtFUpmAflH3/exec', data)
+        //if (MD5($('#invite_code').val()) !== '8606f35ec6c77858dfb80a385d0d1151'
+        //    && MD5($('#invite_code').val()) !== '053adbc286576aac05442cdcbdf14112aa0e42cd') {
+        //    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        //} else {
+            $.post('https://script.google.com/macros/s/AKfycbykys-BqZ2ZDp8hwouUQ3eLspKoqQwcDSmIbBUI8TnbN2XxSMG-gQ3Rz3HlteQW56eY/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -247,9 +247,11 @@ $(document).ready(function () {
                 })
                 .fail(function (data) {
                     console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sori!</strong> Ongelmia serverin kanssa. '));
                 });
-        }
+        //}
+
+        $(document.getElementById("rsvp-form").reset())
     });
 
 });
