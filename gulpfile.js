@@ -33,8 +33,9 @@ gulp.task('default', gulp.series('sass', 'minify-js'));
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', ['sass', 'minify-js'], function () {
+gulp.task('deploy', gulp.series('sass', 'minify-js', function () {
     return gulp.src("./dist/**/*")
       .pipe(deploy())
-  });
+  }));
+
   
