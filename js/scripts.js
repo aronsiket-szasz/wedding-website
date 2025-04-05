@@ -254,6 +254,18 @@ $(document).ready(function () {
         $(document.getElementById("rsvp-form").reset())
     });
 
+    $('#holi-select').change(function () {
+        $(this).removeClass('placeholder')
+    })
+
+    $('#sukunimi-select').change(function () {
+        $(this).removeClass('placeholder')
+    })
+
+
+
+
+
 });
 
 /********************** Extras **********************/

@@ -100,10 +100,11 @@
                     <nav>
                         <ul class="primary-nav">
                             <li><a href="#tervetuloa">Tervetuloa</a></li>
-                            <li><a href="#osoitteet">Vihkikirkko</a></li>
-                            <li><a href="#osoitteet">Juhlapaikka</a></li>
+                            <li><a href="#vihkiminen">Vihkikirkko</a></li>
+                            <li><a href="#juhlapaikka">Juhlapaikka</a></li>
                             <li><a href="#haaohjelma">Hääohjelma</a></li>
                             <li><a href="#lahjoittaminen">Lahjoittaminen</a></li>
+                            <li><a href="#sukunimi">Sukunimiäänestys</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#rsvp">RSVP</a></li>
@@ -236,19 +237,22 @@
     </div>
 </section>
 
+<!--Laskuri-->
 <section class="events section-padding-both" id="events" style="background-color: white;">
     <div class="container">
-        <div class="row" style="display: flex;">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol text-center" style="margin:auto">
+        <div class="row" id="countdown-wrapper" >
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol text-center" style="margin:auto;">
                 <div class="wp1">
                     <h2>Aikaa häihin</h2>
                 </div>
                 <div class="wp3">
-                    <h4 id="countdown" class="text-center"></h4>>
+                    <h4 id="countdown" class="text-center"></h4>
                 </div>
             </div>
             <div class="col-md-6 col-sm-12 col-xs-12 rightcol" id="intro" style="margin:auto">
-                <img src="img/eng_pics/kihlautuminen.jpeg" alt="kihlakuva">
+                <div class="wp2">
+                    <img src="img/eng_pics/kihlautuminen.jpeg" alt="kihlakuva">
+                </div>
             </div>
         </div>
         <!--<div class="row">
@@ -294,12 +298,12 @@
 </section>
 
 <!--Juhlapaikka ja vihkiminen -->
-<section class="events section-padding" id="osoitteet" style="background-color: white;">
+<section class="events section-padding" style="background-color: white;">
     <div class="container">
         <div class="row" style="display: flex;">
         </div>
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+            <div class="col-md-6 col-sm-12 col-xs-12 leftcol" id="vihkiminen">
                 <div class="wp1">
                     <h3 class="header text-center">Vihkiminen<br></h3>
                 </div>
@@ -315,7 +319,7 @@
                 </div>
             </div>
             
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+            <div class="col-md-6 col-sm-12 col-xs-12 rightcol" id="juhlapaikka">
                 <div class="wp2">
                     <h3 class="header text-center">Juhlapaikka<br></h3>
                 </div>
@@ -652,14 +656,15 @@ Vihkiminen
 <section class="events section-padding" id="events" style="background-color:#2D4A87;;">
     <div class="container">
         <div class="row" style="display: flex;">
-            <div class="col-md-12 text-center">
-                <h2 class="header" style="color: white">Lahjoittaminen</h2>
+            <div class="col-md-12 text-center" id="lahjoittaminen" style="width: 100%;">
+                <h2 class="header text-center" style="color: white">Lahjoittaminen</h2>
             </div>
         </div>
-        <div class="row" style="display: flex;">
+        <div class="row" id="lahjoittaminen-fontti">
             <div class="col-md-6 col-sm-12 col-xs-12 leftcol text-center" style="margin:auto">
                 <div>
-                    <p style="color: white">Tähän infot lahjoista.</p>
+                    <p>Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä.Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä.Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä. Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä. Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä.
+                        Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä.Tähän infot lahjoista. Paljon tekstiä. Paljon tekstiä.</p>
                     <nav>
                         <a class="btn-ilmoon rsvp-btn text-center" href="https://lahjalista.net/aronjalotta" >
                             Lahjalistaan
@@ -680,7 +685,7 @@ Vihkiminen
 </section>
 
 <!--Sukunimiäänestys-->
-<section class="events section-padding" id="osoitteet" style="background-color: white;">
+<section class="events section-padding" id="sukunimi" style="background-color: white;">
     <div class="container">
         <div class="row" style="display: flex;">
             <div class="col-md-12 text-center">
@@ -882,7 +887,7 @@ Vihkiminen
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group-select">
                                 <i class="fa fa-glass"></i>
-                                <select name="Holi">
+                                <select name="Holi" id="holi-select" class="placeholder">
                                   <option value="" disabled selected hidden>Holillinen/Holiton</option>
                                   <option value="Holillinen">Holillinen</option>
                                   <option value="Holiton">Holiton</option>
@@ -892,7 +897,7 @@ Vihkiminen
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group-select">
                                 <i class="fa fa-users"></i>
-                                <select name="Sukunimi">
+                                <select name="Sukunimi" id="sukunimi-select" class="placeholder">
                                   <option value="" disabled selected> Mieluisin sukunimi</option>
                                   <option value="Salmi">Salmi</option>
                                   <option value="Junkkaala">Junkkaala</option>

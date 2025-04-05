@@ -12,6 +12,12 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
 .group:after {
   content: "";
   display: table;
@@ -255,7 +261,7 @@ Navigation
 /* ==========================================================================
 Hero
 ========================================================================== */
-@media (min-width: 801px) {
+@media (min-width: 769px) {
   .hero {
     min-height: 750px;
     background: url('../img/hero-min.jpg') center center;
@@ -277,6 +283,7 @@ Hero
       color: $txt-light;
       margin-bottom: 40px;
     }
+
     p.intro {
       color: $txt-light;
       font-size: 20px;
@@ -294,7 +301,7 @@ Hero
   
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .hero {
     min-height: 750px;
     background: url('../img/hero-min-phone.png') center center;
@@ -311,6 +318,8 @@ Hero
       color: $txt-light;
       margin-bottom: 40px;
     }
+
+
     p.intro {
       color: $txt-light;
       font-size: 20px;
@@ -969,6 +978,13 @@ RSVP form
         &:focus {
           outline: none;
         }
+
+        &.placeholder {
+          color: $form-placeholder;          
+          option {
+            color: black;
+          }
+        }
       }
     
       &:invalid {
@@ -1039,6 +1055,12 @@ Scale image
   justify-content: center;
   align-items: center;
   }
+
+.center__vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
 /* ==========================================================================
 Background golor
 ========================================================================== */
@@ -1104,8 +1126,12 @@ Nav bar redirect
   nav-index: tervetuloa;
 }
 
-#osoitteet {
-  nav-index: osoitteet
+#vihkiminen {
+  nav-index: vihkiminen;
+}
+
+#juhlapaikka {
+  nav-index: juhlapaikka;
 }
 
 #haaohjelma {
@@ -1114,6 +1140,14 @@ Nav bar redirect
 
 #lahjoittaminen {
   nav-index: lahjoittaminen
+}
+
+#sukunimi {
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 40px;
+    }
+  }
 }
 
 /* ==========================================================================
@@ -1132,31 +1166,25 @@ sukunimi
 }
 
 /* ==========================================================================
-Kuvarivi
+Countdown-wrapper
 ========================================================================== */
 
-.image-row {
-  display: flex;
-  width: 100%;
-
-  .leftcol {
-    padding-right: 0px;
-    
+#countdown-wrapper {
+  display:flex;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
+}
 
-  .midcol {
-    padding-left: 100px;
-    padding-right: 100px;
+#lahjoittaminen-fontti {
+  display:flex;
+  p {
+    color: white;
   }
-
-  .rightcol {
-    padding-left: 0px;
+  @media (max-width: 768px) {
+    p {
+      font-size: 10px;
+      color: white;
+    }
   }
-
-  img {
-    width: 100%; 
-    height: auto; 
-    aspect-ratio: 16/9;
-  }
-
 }
