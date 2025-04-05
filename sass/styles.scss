@@ -12,12 +12,6 @@
 /* ==========================================================================
 Global Styles
 ========================================================================== */
-@media (max-width: 768px) {
-  h2 {
-    font-size: 40px;
-  }
-}
-
 .group:after {
   content: "";
   display: table;
@@ -1173,6 +1167,9 @@ Countdown-wrapper
   display:flex;
   @media (max-width: 768px) {
     flex-direction: column;
+    h2 {
+      font-size: 40px;
+    }
   }
 }
 
