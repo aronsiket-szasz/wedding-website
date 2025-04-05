@@ -1144,6 +1144,22 @@ Nav bar redirect
   }
 }
 
+#norja {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+    width: 100vw;
+    max-height: 60svh;
+    object-fit: cover;
+    display: block;
+    overflow: hidden;
+    object-position: 50% 85%;
+  }
+}
+
 /* ==========================================================================
 sukunimi
 ========================================================================== */
