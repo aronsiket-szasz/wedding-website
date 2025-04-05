@@ -1130,3 +1130,33 @@ sukunimi
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
+
+/* ==========================================================================
+Kuvarivi
+========================================================================== */
+
+.image-row {
+  display: flex;
+  width: 100%;
+
+  .leftcol {
+    padding-right: 0px;
+    
+  }
+
+  .midcol {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .rightcol {
+    padding-left: 0px;
+  }
+
+  img {
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 16/9;
+  }
+
+}
