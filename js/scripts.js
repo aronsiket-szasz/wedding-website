@@ -139,7 +139,7 @@ $(document).ready(function () {
       
       /********************** Countdown timer ***********************/
 
-      var weddingDate = new Date('Jul 19, 2025 12:00 GMT+0100').getTime();
+      var weddingDate = new Date('Jul 19, 2025 13:00 GMT+0300').getTime();
       var countdownEl = document.getElementById('countdown');
       
       var interval = setInterval(function () {
